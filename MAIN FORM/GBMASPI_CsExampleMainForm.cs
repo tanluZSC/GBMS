@@ -31,6 +31,8 @@ namespace GBMSAPI_CS_Example
             InitializeComponent();
         }
 
+
+        //获取设备型号等信息
         private void UpdateListButton_Click(object sender, EventArgs e)
         {
             this.Enabled = false;
@@ -2030,6 +2032,21 @@ namespace GBMSAPI_CS_Example
             {
                 RefreshHeaterControl();
             }
+        }
+
+        private void groupBox14_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbStripeOptions_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrameRateGroupBox_Enter(object sender, EventArgs e)
+        {
+
         }
         // end ver 4.2.0.1
     }
