@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB85DD45-9BA5-46EA-AAE6-145ABF9D3889}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GBMSAPI_CS_Example</RootNamespace>
+    <AssemblyName>Gbmsapi_GUI_CS</AssemblyName>
+    <ApplicationIcon>GB_ICON.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\RUN_WIN_X86-64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release64|AnyCPU' ">
+    <OutputPath>bin\Release64\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release64|x86' ">
+    <OutputPath>bin\x86\Release64\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release64|x64' ">
+    <OutputPath>..\..\RUN_WIN_X86-64\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GBMSAPI_CS_Example.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GBMSAPI_NET, Version=3.1.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\REFERENCES_64\GBMSAPI_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACQUISITION FORM\AcquisitionCallback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACQUISITION FORM\AcquisitionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACQUISITION FORM\AcquisitionForm.Designer.cs">
+      <DependentUpon>AcquisitionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALIBRATION\CalibrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALIBRATION\CalibrationForm.Designer.cs">
+      <DependentUpon>CalibrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN FORM\GBMASPI_CsExampleMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN FORM\GBMASPI_CsExampleMainForm.Designer.cs">
+      <DependentUpon>GBMASPI_CsExampleMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN FORM\ImageAcquisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN FORM\VUI_LED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN FORM\VUI_LED.Designer.cs">
+      <DependentUpon>VUI_LED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERMANENT DATA STORAGE\PermanentDataStorageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERMANENT DATA STORAGE\PermanentDataStorageForm.Designer.cs">
+      <DependentUpon>PermanentDataStorageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ACQUISITION FORM\AcquisitionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AcquisitionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALIBRATION\CalibrationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CalibrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FORM\GBMASPI_CsExampleMainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GBMASPI_CsExampleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN FORM\VUI_LED.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VUI_LED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERMANENT DATA STORAGE\PermanentDataStorageForm.resx">
+      <DependentUpon>PermanentDataStorageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UTILITY\GBMSAPI_Example_DevNameStrings.cs" />
+    <Compile Include="UTILITY\GBMSAPI_Example_Globals.cs" />
+    <Compile Include="UTILITY\GBMSAPI_Example_Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GB_ICON.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
