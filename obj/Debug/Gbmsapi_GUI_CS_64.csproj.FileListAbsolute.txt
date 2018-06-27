@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\Gbmsapi_GUI_CS.exe
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\Gbmsapi_GUI_CS.pdb
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\Gbmsapi_GUI_CS_64.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\GBMSAPI_CS_Example.ACQUISITION_FORM.AcquisitionForm.resources
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\GBMSAPI_CS_Example.CALIBRATION.CalibrationForm.resources
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\GBMSAPI_CS_Example.GBMASPI_CsExampleMainForm.resources
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\GBMSAPI_CS_Example.MAIN_FORM.VUI_LED.resources
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\GBMSAPI_CS_Example.PERMANENT_DATA_STORAGE.PermanentDataStorageForm.resources
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\GBMSAPI_CS_Example.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\obj\Debug\Gbmsapi_GUI_CS_64.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\Gbmsapi_GUI_CS.exe
+C:\Users\Administrator\Desktop\Gbmsapi_GUI_CS\Gbmsapi_GUI_CS.pdb

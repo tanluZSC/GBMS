@@ -277,7 +277,7 @@ namespace GBMSAPI_CS_Example.UTILITY
                 return 0;
             }
         }
-
+        //¸÷ÖÖ´íÎóÂë
         public static String GBMSAPI_Example_GetErrorStringFromCode(Int32 ErrorCode)
         {
             switch (ErrorCode)
