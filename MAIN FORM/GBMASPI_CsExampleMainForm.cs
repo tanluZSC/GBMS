@@ -102,7 +102,7 @@ namespace GBMSAPI_CS_Example
                 // SAVE IMAGE (we don't have
                 // any image to be saved)
                 //////////////////////////////
-                this.SaveFileStripButton.Enabled = false;
+                this.SaveFileStripButton.Enabled = true;
 
                 //////////////////////////////
                 // GET LIBRARY VERSION
@@ -114,7 +114,8 @@ namespace GBMSAPI_CS_Example
 
                 this.GBMSAPIVersionTextBox.Text = "" + VersionField1 + "." + VersionField2 + "." + VersionField3 + "." + VersionField4;
 
-            
+                Console.WriteLine(this.GBMSAPIVersionTextBox.Text);
+                
                 string LowLevelDllName;
                 GBMSAPI_NET_AuxiliaryRoutines.GBMSAPI_NET_GetUnderlyingLibraryDllVersion(
                     out VersionField1, out VersionField2, out VersionField3, out VersionField4, out LowLevelDllName
@@ -1302,7 +1303,7 @@ namespace GBMSAPI_CS_Example
                 }
             }
         }
-
+        #region 保存图像到本地，目前图像会覆盖，只会保存一个图像
         private void SaveFileStripButton_Click(object sender, EventArgs e)
         {
             // copy image data
@@ -1409,7 +1410,9 @@ namespace GBMSAPI_CS_Example
                 }
             }
         }
+        #endregion
 
+        #region 根据选择框是否被勾选有效/无效化图像裁剪
         private void ClipEnableCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (this.ClipEnableCheckBox.Checked == true)
@@ -1424,6 +1427,8 @@ namespace GBMSAPI_CS_Example
             }
         }
 
+        #endregion
+        #region 自定义横、纵坐标的大小
         private void ClipRegionSizeXTextBox_Leave(object sender, EventArgs e)
         {
             try
@@ -1501,7 +1506,7 @@ namespace GBMSAPI_CS_Example
             {
             }
         }
-
+        #endregion
         private void NoRollPreviewCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (this.NoRollPreviewCheckBox.Checked == false)

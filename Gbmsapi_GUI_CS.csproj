@@ -87,8 +87,9 @@
     <Compile Include="MAIN FORM\GBMASPI_CsExampleMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MAIN FORM\GBMASPI_CsExampleMainForm.Designer.cs">
+    <Compile Include="MAIN FORM\.Designer.cs">
       <DependentUpon>GBMASPI_CsExampleMainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MAIN FORM\ImageAcquisition.cs">
       <SubType>Form</SubType>
