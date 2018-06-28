@@ -517,8 +517,10 @@ namespace GBMSAPI_CS_Example.UTILITY
                 return null;
             }
 
+            #region case语句 判断选择是哪个，需要采集什么内容
             switch (ObjType)
             {
+                //单指滚动指纹
                 case GBMSAPI_NET_ScannableBiometricTypes.GBMSAPI_NET_SBT_ROLL_SINGLE_FINGER:
                     {
                         String[] ObjToScanList = new String[10];
@@ -860,6 +862,7 @@ namespace GBMSAPI_CS_Example.UTILITY
                     }
                 // end Ver 2.10.0.0
             }
+            #endregion
 
             return null;
         }

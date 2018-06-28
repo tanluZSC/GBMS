@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+#region 把所有显示中会出现的字符串都定义成为变量了。
+
 namespace GBMSAPI_CS_Example.UTILITY
 {
     class GBMSAPI_Example_DevNameStrings
@@ -42,10 +44,11 @@ namespace GBMSAPI_CS_Example.UTILITY
 
         public const String MS527t_NameStr = "MS527t"; // ver 4.2.0.0
     }
+    #region 说明了采集各种指纹的选项
 
     class GBMSAPI_Example_ScannableObjectStrings
     {
-        // flat fingers
+        // 平面指纹
         public static String FlatRightThumb_Str = "FLAT RIGHT THUMB";
         public static String FlatRightIndex_Str = "FLAT RIGHT INDEX";
         public static String FlatRightMiddle_Str = "FLAT RIGHT MIDDLE";
@@ -57,7 +60,7 @@ namespace GBMSAPI_CS_Example.UTILITY
         public static String FlatLeftRing_Str = "FLAT LEFT RING";
         public static String FlatLeftLittle_Str = "FLAT LEFT LITTLE";
 
-        // Roll fingers
+        // 滚动指纹
         public static String RollRightThumb_Str = "ROLL RIGHT THUMB";
         public static String RollRightIndex_Str = "ROLL RIGHT INDEX";
         public static String RollRightMiddle_Str = "ROLL RIGHT MIDDLE";
@@ -94,39 +97,39 @@ namespace GBMSAPI_CS_Example.UTILITY
         public static String RolledDownLeftLittle_Str = "ROLLED DOWN LEFT LITTLE";
         // end ver 3.2.0.0
 
-        // two thumbs
+        // 双拇指
         public static String Slap2Thumbs_Str = "2 THUMBS";
 
 		// VER 2000
-		// two indexes
+		// 双食指
 		public static String Slap2Indexes_Str = "2 INDEXES";
 		// end VER 2000
 
-        // four fingers
+        //四联指
         public static String Slap4Right_Str = "4 FINGERS RIGHT";
         public static String Slap4Left_Str = "4 FINGERS LEFT";
 
-        // two fingers
+        // 左右手各一指（双手指）
         public static String Slap2Right_Str = "2 FINGERS RIGHT";
         public static String Slap2Left_Str = "2 FINGERS LEFT";
 
-        // upper half palm
+        //上半掌
         public static String UpperHalfPalmRight_Str = "UPPER HALF PALM RIGHT";
         public static String UpperHalfPalmLeft_Str = "UPPER HALF PALM LEFT";
 
-        // lower half palm
+        // 下半掌
         public static String LowerHalfPalmRight_Str = "LOWER HALF PALM RIGHT";
         public static String LowerHalfPalmLeft_Str = "LOWER HALF PALM LEFT";
 
-        // writer palm
+        // 常用手掌
         public static String WriterPalmRight_Str = "WRITER PALM RIGHT";
         public static String WriterPalmLeft_Str = "WRITER PALM LEFT";
 
-        // photo
+        //照片
         public static String Photo_Str = "PHOTO";
 
 		// Ver 2.10.0.0
-		// rolled thenar
+		// rolled thenar 滚动掌纹
 		public static String RolledThenarRight_Str = "ROLLED THENAR RIGHT";
         public static String RolledThenarLeft_Str = "ROLLED THENAR LEFT";
         // Ver 3.3.0.0
@@ -135,7 +138,7 @@ namespace GBMSAPI_CS_Example.UTILITY
         public static String RolledHypoThenarLeft_Str = "ROLLED HYPOTHENAR LEFT";
         // end Ver 3.3.0.0
 
-		// Rolled joint
+		// Rolled joint //滚动掌纹
 		public static String RolledJointRightThumb_Str = "ROLLED JOINT RIGHT THUMB";
 		public static String RolledJointRightIndex_Str = "ROLLED JOINT RIGHT INDEX";
 		public static String RolledJointRightMiddle_Str = "ROLLED JOINT RIGHT MIDDLE";
@@ -146,8 +149,8 @@ namespace GBMSAPI_CS_Example.UTILITY
 		public static String RolledJointLeftMiddle_Str = "ROLLED JOINT LEFT MIDDLE";
 		public static String RolledJointLeftRing_Str = "ROLLED JOINT LEFT RING";
 		public static String RolledJointLeftLittle_Str = "ROLLED JOINT LEFT LITTLE";
-
-		// Plain joint left side
+        //左侧平面关节
+		// Plain joint left side 
 		public static String PlainJointLeftSideRightThumb_Str = "PLAIN JOINT LEFT SIDE RIGHT THUMB";
 		public static String PlainJointLeftSideRightIndex_Str = "PLAIN JOINT LEFT SIDE RIGHT INDEX";
 		public static String PlainJointLeftSideRightMiddle_Str = "PLAIN JOINT LEFT SIDE RIGHT MIDDLE";
@@ -158,7 +161,7 @@ namespace GBMSAPI_CS_Example.UTILITY
 		public static String PlainJointLeftSideLeftMiddle_Str = "PLAIN JOINT LEFT SIDE LEFT MIDDLE";
 		public static String PlainJointLeftSideLeftRing_Str = "PLAIN JOINT LEFT SIDE LEFT RING";
 		public static String PlainJointLeftSideLeftLittle_Str = "PLAIN JOINT LEFT SIDE LEFT LITTLE";
-
+        //右侧平面关节
 		// Plain joint right side
 		public static String PlainJointRightSideRightThumb_Str = "PLAIN JOINT RIGHT SIDE RIGHT THUMB";
 		public static String PlainJointRightSideRightIndex_Str = "PLAIN JOINT RIGHT SIDE RIGHT INDEX";
@@ -171,6 +174,7 @@ namespace GBMSAPI_CS_Example.UTILITY
 		public static String PlainJointRightSideLeftRing_Str = "PLAIN JOINT RIGHT SIDE LEFT RING";
 		public static String PlainJointRightSideLeftLittle_Str = "PLAIN JOINT RIGHT SIDE LEFT LITTLE";
 
+        //中部平面关节
 		// Plain joint center
 		public static String RolledJointCenterRightThumb_Str = "ROLLED JOINT CENTER RIGHT THUMB";
 		public static String RolledJointCenterRightIndex_Str = "ROLLED JOINT CENTER RIGHT INDEX";
@@ -183,7 +187,7 @@ namespace GBMSAPI_CS_Example.UTILITY
 		public static String RolledJointCenterLeftRing_Str = "ROLLED JOINT CENTER LEFT RING";
 		public static String RolledJointCenterLeftLittle_Str = "ROLLED JOINT CENTER LEFT LITTLE";
 
-		// Rolled tip
+		// Rolled tip 滚动指尖
 		public static String RolledTipRightThumb_Str = "ROLLED TIP RIGHT THUMB";
 		public static String RolledTipRightIndex_Str = "ROLLED TIP RIGHT INDEX";
 		public static String RolledTipRightMiddle_Str = "ROLLED TIP RIGHT MIDDLE";
@@ -196,6 +200,7 @@ namespace GBMSAPI_CS_Example.UTILITY
 		public static String RolledTipLeftLittle_Str = "ROLLED TIP LEFT LITTLE";
 		// end Ver 2.10.0.0
 	}
+    #endregion
 
     public class DeviceFeaturesStrings
     {
@@ -317,3 +322,4 @@ namespace GBMSAPI_CS_Example.UTILITY
             static String AutoCaptureBlocked = "BLOCKED";
     }
 }
+#endregion

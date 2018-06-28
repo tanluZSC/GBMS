@@ -114,7 +114,7 @@ namespace GBMSAPI_CS_Example
 
                 this.GBMSAPIVersionTextBox.Text = "" + VersionField1 + "." + VersionField2 + "." + VersionField3 + "." + VersionField4;
 
-
+            
                 string LowLevelDllName;
                 GBMSAPI_NET_AuxiliaryRoutines.GBMSAPI_NET_GetUnderlyingLibraryDllVersion(
                     out VersionField1, out VersionField2, out VersionField3, out VersionField4, out LowLevelDllName
@@ -1115,6 +1115,7 @@ namespace GBMSAPI_CS_Example
             }
         }
 
+
         private void CalibrateDeviceToolStripButton_Click(object sender, EventArgs e)
         {
             try
@@ -1148,9 +1149,11 @@ namespace GBMSAPI_CS_Example
             }
         }
 
+
+        #region 获取指纹信息的入口
         private void AcquireImageButton_Click(object sender, EventArgs e)
         {
-            AcquisitionForm DlgToOpen = new AcquisitionForm(this);
+            AcquisitionForm DlgToOpen = new AcquisitionForm(this);//指纹采集的具体页面
 
             try
             {
@@ -1161,13 +1164,14 @@ namespace GBMSAPI_CS_Example
                     {
                         DlgToOpen.ShowDialog();
                     }
-                    Bitmap LastAcqImage = null;
+                    Bitmap LastAcqImage = null; //指纹图片初始化为空
 
+                    //把图像扔到缓存空间中
                     // copy image data
                     IntPtr SourcePtr = ((GBMSAPI_Example_Globals.LastEventInfo &
                         GBMSAPI_NET_EventInfo.GBMSAPI_NET_EI_ACQUISITION_PHASE) == 0) ?
-                        GBMSAPI_Example_Globals.AcquisitionPreviewBuffer :
-                        GBMSAPI_Example_Globals.AcquisitionFullResBuffer;
+                        GBMSAPI_Example_Globals.AcquisitionPreviewBuffer ://预览控件
+                        GBMSAPI_Example_Globals.AcquisitionFullResBuffer;//全帧率预览
 
                     int SourceSX, SourceSY;
 
@@ -1178,6 +1182,7 @@ namespace GBMSAPI_CS_Example
                      GBMSAPI_Example_Globals.ClippingRegionSizeY != 0
                      )
                     {
+                        //裁剪结果图像
                         // clip the resulting image
                         Byte[] TempBuffer = new Byte[GBMSAPI_Example_Globals.LastFrameSizeX * GBMSAPI_Example_Globals.LastFrameSizeY];
                         Marshal.Copy(SourcePtr, TempBuffer, 0, TempBuffer.Length);
@@ -1197,7 +1202,7 @@ namespace GBMSAPI_CS_Example
                         SourceSX = GBMSAPI_Example_Globals.LastFrameSizeX;
                         SourceSY = GBMSAPI_Example_Globals.LastFrameSizeY;
                     }
-
+                    //给采集到的图片赋值
                     LastAcqImage = new Bitmap(
                              SourceSX, SourceSY,
                              SourceSX,
@@ -1213,6 +1218,7 @@ namespace GBMSAPI_CS_Example
 
                     // Rescale Acquired image picture box, holding its width,
                     // and varying the height (until a 300 pixel threshold, then fix width)
+                    //调整获取到的图片的长宽，并使其分辨率在上相300像素每英寸以下
                     this.AcquiredImagePictureBox.Width = GBMSAPI_Example_Globals.DesiredPictureBoxSize;
                     this.AcquiredImagePictureBox.Height = (int)(
                         ((double)(this.AcquiredImagePictureBox.Width)) *
@@ -1257,7 +1263,7 @@ namespace GBMSAPI_CS_Example
                 DlgToOpen.ReleaseResources();
             }
         }
-
+        #endregion
         private void SelectDeviceButton_Click(object sender, EventArgs e)
         {
             String CurrentChoosenDev = (String)(this.DeviceTypeComboBox.SelectedItem);
@@ -1927,6 +1933,8 @@ namespace GBMSAPI_CS_Example
         // end VER 3.1.0.0
 
         // ver 4.0.0.0
+
+        
         private void rbHwFfdPersonalizedStrictness_CheckedChanged(object sender, EventArgs e)
         {
             if (this.rbHwFfdPersonalizedStrictness.Checked)
@@ -1941,6 +1949,8 @@ namespace GBMSAPI_CS_Example
         // end ver 4.0.0.0
 
         // ver 4.1.0.0
+
+        #region 假手指选项判断标志
         private void cbEnableAutoCaptureBlockIfFakeFinger_CheckedChanged(object sender, EventArgs e)
         {
             if (cbEnableAutoCaptureBlockIfFakeFinger.Checked)
@@ -1949,8 +1959,9 @@ namespace GBMSAPI_CS_Example
             }
             else GBMSAPI_NET_ScanSettingsRoutines.GBMSAPI_NET_EnableAutoCaptureBlockForDetectedFakes((byte)0);
         }
+        #endregion
         // end ver 4.1.0.0
-
+        #region 几个加热相关的函数
         // ver 4.2.0.1
         private void RefreshHeaterControl()
         {
@@ -2014,6 +2025,7 @@ namespace GBMSAPI_CS_Example
             this.bHeaterSetTemp.Text = "Set to " + TempC;
         }
 
+       
         private void bHeaterSetTemp_Click(object sender, EventArgs e)
         {
             int RetVal;
@@ -2033,6 +2045,8 @@ namespace GBMSAPI_CS_Example
                 RefreshHeaterControl();
             }
         }
+        #endregion
+
 
         private void groupBox14_Enter(object sender, EventArgs e)
         {

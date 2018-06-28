@@ -317,7 +317,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
                 this.Close();
             }
         }
-
+        //关闭窗口，没有做图片保存
         private void AcceptImageButton_Click(object sender, EventArgs e)
         {
             this.Close();

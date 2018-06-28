@@ -1,5 +1,6 @@
 namespace GBMSAPI_CS_Example
 {
+    //所有控件的界面设计。
     partial class GBMASPI_CsExampleMainForm
     {
         /// <summary>
@@ -2531,7 +2532,7 @@ namespace GBMSAPI_CS_Example
             this.AutoCaptureLabel.Size = new System.Drawing.Size(11, 13);
             this.AutoCaptureLabel.TabIndex = 3;
             // 
-            // tabPage2
+            // tabPage2 指纹数据采集的tab
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -2542,7 +2543,7 @@ namespace GBMSAPI_CS_Example
             this.tabPage2.Text = "Acquisition Options";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // tabPage3 显示得到的图像信息的tab
             // 
             this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);

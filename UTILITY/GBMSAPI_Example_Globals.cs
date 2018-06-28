@@ -234,6 +234,7 @@ namespace GBMSAPI_CS_Example.UTILITY
         /**************************************
          * Acquisition Info Picture Box
         **************************************/
+       
         public static int DesiredPictureBoxSize = 500;
 
         /**************************************

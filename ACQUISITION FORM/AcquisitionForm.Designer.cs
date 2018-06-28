@@ -93,77 +93,77 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(7, 230);
+            this.label13.Location = new System.Drawing.Point(7, 212);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 13);
+            this.label13.Size = new System.Drawing.Size(53, 12);
             this.label13.TabIndex = 14;
             this.label13.Text = "Contrast";
             // 
             // AutoCapturePhaseTextBox
             // 
-            this.AutoCapturePhaseTextBox.Location = new System.Drawing.Point(113, 192);
+            this.AutoCapturePhaseTextBox.Location = new System.Drawing.Point(113, 177);
             this.AutoCapturePhaseTextBox.Name = "AutoCapturePhaseTextBox";
             this.AutoCapturePhaseTextBox.ReadOnly = true;
-            this.AutoCapturePhaseTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AutoCapturePhaseTextBox.Size = new System.Drawing.Size(100, 21);
             this.AutoCapturePhaseTextBox.TabIndex = 13;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 195);
+            this.label12.Location = new System.Drawing.Point(7, 180);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 13);
+            this.label12.Size = new System.Drawing.Size(113, 12);
             this.label12.TabIndex = 12;
             this.label12.Text = "Auto-Capture Phase";
             // 
             // NominalFrameRateTextBox
             // 
-            this.NominalFrameRateTextBox.Location = new System.Drawing.Point(113, 162);
+            this.NominalFrameRateTextBox.Location = new System.Drawing.Point(113, 150);
             this.NominalFrameRateTextBox.Name = "NominalFrameRateTextBox";
             this.NominalFrameRateTextBox.ReadOnly = true;
-            this.NominalFrameRateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NominalFrameRateTextBox.Size = new System.Drawing.Size(100, 21);
             this.NominalFrameRateTextBox.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 165);
+            this.label5.Location = new System.Drawing.Point(7, 152);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 13);
+            this.label5.Size = new System.Drawing.Size(113, 12);
             this.label5.TabIndex = 10;
             this.label5.Text = "Nominal Frame Rate";
             // 
             // CurrentFrameRateTextBox
             // 
-            this.CurrentFrameRateTextBox.Location = new System.Drawing.Point(113, 133);
+            this.CurrentFrameRateTextBox.Location = new System.Drawing.Point(113, 123);
             this.CurrentFrameRateTextBox.Name = "CurrentFrameRateTextBox";
             this.CurrentFrameRateTextBox.ReadOnly = true;
-            this.CurrentFrameRateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.CurrentFrameRateTextBox.Size = new System.Drawing.Size(100, 21);
             this.CurrentFrameRateTextBox.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 136);
+            this.label6.Location = new System.Drawing.Point(7, 126);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 13);
+            this.label6.Size = new System.Drawing.Size(113, 12);
             this.label6.TabIndex = 8;
             this.label6.Text = "Current Frame Rate";
             // 
             // RollPreviewModeTextBox
             // 
-            this.RollPreviewModeTextBox.Location = new System.Drawing.Point(112, 108);
+            this.RollPreviewModeTextBox.Location = new System.Drawing.Point(112, 100);
             this.RollPreviewModeTextBox.Name = "RollPreviewModeTextBox";
             this.RollPreviewModeTextBox.ReadOnly = true;
-            this.RollPreviewModeTextBox.Size = new System.Drawing.Size(101, 20);
+            this.RollPreviewModeTextBox.Size = new System.Drawing.Size(101, 21);
             this.RollPreviewModeTextBox.TabIndex = 23;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 111);
+            this.label20.Location = new System.Drawing.Point(6, 102);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(96, 13);
+            this.label20.Size = new System.Drawing.Size(107, 12);
             this.label20.TabIndex = 22;
             this.label20.Text = "Roll Preview Mode";
             // 
@@ -171,9 +171,9 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // 
             this.label18.BackColor = System.Drawing.Color.Green;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(10, 37);
+            this.label18.Location = new System.Drawing.Point(10, 34);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(142, 17);
+            this.label18.Size = new System.Drawing.Size(142, 16);
             this.label18.TabIndex = 23;
             this.label18.Text = "Green: Accepted";
             // 
@@ -181,51 +181,51 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // 
             this.label17.BackColor = System.Drawing.Color.White;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(10, 20);
+            this.label17.Location = new System.Drawing.Point(10, 18);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(142, 17);
+            this.label17.Size = new System.Drawing.Size(142, 16);
             this.label17.TabIndex = 22;
             this.label17.Text = "White: Not requested";
             // 
             // FullResolutionPreviewAcceptedLabel
             // 
             this.FullResolutionPreviewAcceptedLabel.BackColor = System.Drawing.Color.White;
-            this.FullResolutionPreviewAcceptedLabel.Location = new System.Drawing.Point(210, 63);
+            this.FullResolutionPreviewAcceptedLabel.Location = new System.Drawing.Point(210, 58);
             this.FullResolutionPreviewAcceptedLabel.Name = "FullResolutionPreviewAcceptedLabel";
-            this.FullResolutionPreviewAcceptedLabel.Size = new System.Drawing.Size(10, 13);
+            this.FullResolutionPreviewAcceptedLabel.Size = new System.Drawing.Size(10, 12);
             this.FullResolutionPreviewAcceptedLabel.TabIndex = 19;
             // 
             // AcquireFlatObjectOnRollAreaAcceptedLabel
             // 
             this.AcquireFlatObjectOnRollAreaAcceptedLabel.BackColor = System.Drawing.Color.White;
-            this.AcquireFlatObjectOnRollAreaAcceptedLabel.Location = new System.Drawing.Point(169, 86);
+            this.AcquireFlatObjectOnRollAreaAcceptedLabel.Location = new System.Drawing.Point(169, 79);
             this.AcquireFlatObjectOnRollAreaAcceptedLabel.Name = "AcquireFlatObjectOnRollAreaAcceptedLabel";
-            this.AcquireFlatObjectOnRollAreaAcceptedLabel.Size = new System.Drawing.Size(10, 13);
+            this.AcquireFlatObjectOnRollAreaAcceptedLabel.Size = new System.Drawing.Size(10, 12);
             this.AcquireFlatObjectOnRollAreaAcceptedLabel.TabIndex = 18;
             // 
             // HLPCompletenessTextBox
             // 
-            this.HLPCompletenessTextBox.Location = new System.Drawing.Point(113, 295);
+            this.HLPCompletenessTextBox.Location = new System.Drawing.Point(113, 272);
             this.HLPCompletenessTextBox.Name = "HLPCompletenessTextBox";
             this.HLPCompletenessTextBox.ReadOnly = true;
-            this.HLPCompletenessTextBox.Size = new System.Drawing.Size(100, 20);
+            this.HLPCompletenessTextBox.Size = new System.Drawing.Size(100, 21);
             this.HLPCompletenessTextBox.TabIndex = 21;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(7, 298);
+            this.label16.Location = new System.Drawing.Point(7, 275);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 13);
+            this.label16.Size = new System.Drawing.Size(101, 12);
             this.label16.TabIndex = 20;
             this.label16.Text = "HLP Completeness";
             // 
             // AcceptImageButton
             // 
             this.AcceptImageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AcceptImageButton.Location = new System.Drawing.Point(860, 96);
+            this.AcceptImageButton.Location = new System.Drawing.Point(860, 89);
             this.AcceptImageButton.Name = "AcceptImageButton";
-            this.AcceptImageButton.Size = new System.Drawing.Size(235, 33);
+            this.AcceptImageButton.Size = new System.Drawing.Size(235, 30);
             this.AcceptImageButton.TabIndex = 18;
             this.AcceptImageButton.Text = "ACCEPT";
             this.AcceptImageButton.UseVisualStyleBackColor = true;
@@ -234,15 +234,15 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Location = new System.Drawing.Point(7, 17);
+            this.panel1.Location = new System.Drawing.Point(7, 16);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(171, 37);
+            this.panel1.Size = new System.Drawing.Size(171, 34);
             this.panel1.TabIndex = 25;
             // 
             // ObjectNameTextBox
             // 
             this.ObjectNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ObjectNameTextBox.Location = new System.Drawing.Point(860, 21);
+            this.ObjectNameTextBox.Location = new System.Drawing.Point(860, 19);
             this.ObjectNameTextBox.Name = "ObjectNameTextBox";
             this.ObjectNameTextBox.Size = new System.Drawing.Size(235, 30);
             this.ObjectNameTextBox.TabIndex = 17;
@@ -261,9 +261,9 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.panel1);
-            this.groupBox2.Location = new System.Drawing.Point(860, 188);
+            this.groupBox2.Location = new System.Drawing.Point(860, 174);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(235, 144);
+            this.groupBox2.Size = new System.Drawing.Size(235, 133);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acquisition Options";
@@ -271,103 +271,103 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // AutoCaptureAccettedLabel
             // 
             this.AutoCaptureAccettedLabel.BackColor = System.Drawing.Color.White;
-            this.AutoCaptureAccettedLabel.Location = new System.Drawing.Point(81, 64);
+            this.AutoCaptureAccettedLabel.Location = new System.Drawing.Point(81, 59);
             this.AutoCaptureAccettedLabel.Name = "AutoCaptureAccettedLabel";
-            this.AutoCaptureAccettedLabel.Size = new System.Drawing.Size(10, 13);
+            this.AutoCaptureAccettedLabel.Size = new System.Drawing.Size(10, 12);
             this.AutoCaptureAccettedLabel.TabIndex = 17;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 86);
+            this.label11.Location = new System.Drawing.Point(6, 79);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(160, 13);
+            this.label11.Size = new System.Drawing.Size(197, 12);
             this.label11.TabIndex = 16;
             this.label11.Text = "Acquire Flat Object On Roll Area";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(109, 63);
+            this.label10.Location = new System.Drawing.Point(109, 58);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 13);
+            this.label10.Size = new System.Drawing.Size(119, 12);
             this.label10.TabIndex = 15;
             this.label10.Text = "Full Res in Preview";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 64);
+            this.label7.Location = new System.Drawing.Point(6, 59);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 13);
+            this.label7.Size = new System.Drawing.Size(77, 12);
             this.label7.TabIndex = 12;
             this.label7.Text = "Auto-Capture";
             // 
             // ArtefactsSizeTextBox
             // 
-            this.ArtefactsSizeTextBox.Location = new System.Drawing.Point(112, 325);
+            this.ArtefactsSizeTextBox.Location = new System.Drawing.Point(112, 300);
             this.ArtefactsSizeTextBox.Name = "ArtefactsSizeTextBox";
             this.ArtefactsSizeTextBox.ReadOnly = true;
-            this.ArtefactsSizeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ArtefactsSizeTextBox.Size = new System.Drawing.Size(100, 21);
             this.ArtefactsSizeTextBox.TabIndex = 19;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 328);
+            this.label15.Location = new System.Drawing.Point(6, 303);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(72, 13);
+            this.label15.Size = new System.Drawing.Size(89, 12);
             this.label15.TabIndex = 18;
             this.label15.Text = "Artefacts Size";
             // 
             // SizeTextBox
             // 
-            this.SizeTextBox.Location = new System.Drawing.Point(113, 260);
+            this.SizeTextBox.Location = new System.Drawing.Point(113, 240);
             this.SizeTextBox.Name = "SizeTextBox";
             this.SizeTextBox.ReadOnly = true;
-            this.SizeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SizeTextBox.Size = new System.Drawing.Size(100, 21);
             this.SizeTextBox.TabIndex = 17;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 263);
+            this.label14.Location = new System.Drawing.Point(7, 243);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(27, 13);
+            this.label14.Size = new System.Drawing.Size(29, 12);
             this.label14.TabIndex = 16;
             this.label14.Text = "Size";
             // 
             // ContrastTextBox
             // 
-            this.ContrastTextBox.Location = new System.Drawing.Point(113, 227);
+            this.ContrastTextBox.Location = new System.Drawing.Point(113, 210);
             this.ContrastTextBox.Name = "ContrastTextBox";
             this.ContrastTextBox.ReadOnly = true;
-            this.ContrastTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ContrastTextBox.Size = new System.Drawing.Size(100, 21);
             this.ContrastTextBox.TabIndex = 15;
             // 
             // ImSYTextBox
             // 
-            this.ImSYTextBox.Location = new System.Drawing.Point(113, 105);
+            this.ImSYTextBox.Location = new System.Drawing.Point(113, 97);
             this.ImSYTextBox.Name = "ImSYTextBox";
             this.ImSYTextBox.ReadOnly = true;
-            this.ImSYTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ImSYTextBox.Size = new System.Drawing.Size(100, 21);
             this.ImSYTextBox.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 108);
+            this.label3.Location = new System.Drawing.Point(7, 100);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.Size = new System.Drawing.Size(77, 12);
             this.label3.TabIndex = 6;
             this.label3.Text = "Image Size Y";
             // 
             // StartStopButton
             // 
             this.StartStopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartStopButton.Location = new System.Drawing.Point(860, 58);
+            this.StartStopButton.Location = new System.Drawing.Point(860, 54);
             this.StartStopButton.Name = "StartStopButton";
-            this.StartStopButton.Size = new System.Drawing.Size(235, 32);
+            this.StartStopButton.Size = new System.Drawing.Size(235, 30);
             this.StartStopButton.TabIndex = 12;
             this.StartStopButton.Text = "START";
             this.StartStopButton.UseVisualStyleBackColor = true;
@@ -384,25 +384,25 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             this.DiagnosticMessageListBox.ForeColor = System.Drawing.Color.Red;
             this.DiagnosticMessageListBox.FormattingEnabled = true;
             this.DiagnosticMessageListBox.ItemHeight = 18;
-            this.DiagnosticMessageListBox.Location = new System.Drawing.Point(609, 540);
+            this.DiagnosticMessageListBox.Location = new System.Drawing.Point(609, 498);
             this.DiagnosticMessageListBox.Name = "DiagnosticMessageListBox";
-            this.DiagnosticMessageListBox.Size = new System.Drawing.Size(486, 76);
+            this.DiagnosticMessageListBox.Size = new System.Drawing.Size(486, 58);
             this.DiagnosticMessageListBox.TabIndex = 11;
             // 
             // ImSXTextBox
             // 
-            this.ImSXTextBox.Location = new System.Drawing.Point(113, 76);
+            this.ImSXTextBox.Location = new System.Drawing.Point(113, 70);
             this.ImSXTextBox.Name = "ImSXTextBox";
             this.ImSXTextBox.ReadOnly = true;
-            this.ImSXTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ImSXTextBox.Size = new System.Drawing.Size(100, 21);
             this.ImSXTextBox.TabIndex = 5;
             // 
             // AcquiredImagePictureBox
             // 
             this.AcquiredImagePictureBox.BackColor = System.Drawing.Color.White;
-            this.AcquiredImagePictureBox.Location = new System.Drawing.Point(3, 20);
+            this.AcquiredImagePictureBox.Location = new System.Drawing.Point(3, 18);
             this.AcquiredImagePictureBox.Name = "AcquiredImagePictureBox";
-            this.AcquiredImagePictureBox.Size = new System.Drawing.Size(600, 600);
+            this.AcquiredImagePictureBox.Size = new System.Drawing.Size(600, 554);
             this.AcquiredImagePictureBox.TabIndex = 10;
             this.AcquiredImagePictureBox.TabStop = false;
             this.AcquiredImagePictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.AcquiredImagePictureBox_Paint);
@@ -410,35 +410,35 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 79);
+            this.label4.Location = new System.Drawing.Point(7, 73);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.Size = new System.Drawing.Size(77, 12);
             this.label4.TabIndex = 4;
             this.label4.Text = "Image Size X";
             // 
             // StopTypeTextBox
             // 
-            this.StopTypeTextBox.Location = new System.Drawing.Point(113, 49);
+            this.StopTypeTextBox.Location = new System.Drawing.Point(113, 45);
             this.StopTypeTextBox.Name = "StopTypeTextBox";
             this.StopTypeTextBox.ReadOnly = true;
-            this.StopTypeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.StopTypeTextBox.Size = new System.Drawing.Size(100, 21);
             this.StopTypeTextBox.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 52);
+            this.label2.Location = new System.Drawing.Point(7, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(59, 12);
             this.label2.TabIndex = 2;
             this.label2.Text = "Stop Type";
             // 
             // ImageResTextBox
             // 
-            this.ImageResTextBox.Location = new System.Drawing.Point(113, 20);
+            this.ImageResTextBox.Location = new System.Drawing.Point(113, 18);
             this.ImageResTextBox.Name = "ImageResTextBox";
             this.ImageResTextBox.ReadOnly = true;
-            this.ImageResTextBox.Size = new System.Drawing.Size(100, 20);
+            this.ImageResTextBox.Size = new System.Drawing.Size(100, 21);
             this.ImageResTextBox.TabIndex = 1;
             // 
             // groupBox1
@@ -475,104 +475,104 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.ImageResTextBox);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(609, 21);
+            this.groupBox1.Location = new System.Drawing.Point(609, 19);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(235, 513);
+            this.groupBox1.Size = new System.Drawing.Size(235, 474);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Image Info";
             // 
             // tbRolledFlatRatio
             // 
-            this.tbRolledFlatRatio.Location = new System.Drawing.Point(112, 476);
+            this.tbRolledFlatRatio.Location = new System.Drawing.Point(112, 439);
             this.tbRolledFlatRatio.Name = "tbRolledFlatRatio";
             this.tbRolledFlatRatio.ReadOnly = true;
-            this.tbRolledFlatRatio.Size = new System.Drawing.Size(100, 20);
+            this.tbRolledFlatRatio.Size = new System.Drawing.Size(100, 21);
             this.tbRolledFlatRatio.TabIndex = 37;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 479);
+            this.label22.Location = new System.Drawing.Point(6, 442);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(82, 13);
+            this.label22.Size = new System.Drawing.Size(107, 12);
             this.label22.TabIndex = 36;
             this.label22.Text = "Rolled/Flat ratio";
             // 
             // tbDryAreaPercent
             // 
-            this.tbDryAreaPercent.Location = new System.Drawing.Point(113, 415);
+            this.tbDryAreaPercent.Location = new System.Drawing.Point(113, 383);
             this.tbDryAreaPercent.Name = "tbDryAreaPercent";
             this.tbDryAreaPercent.ReadOnly = true;
-            this.tbDryAreaPercent.Size = new System.Drawing.Size(100, 20);
+            this.tbDryAreaPercent.Size = new System.Drawing.Size(100, 21);
             this.tbDryAreaPercent.TabIndex = 29;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(7, 418);
+            this.label19.Location = new System.Drawing.Point(7, 386);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(88, 13);
+            this.label19.Size = new System.Drawing.Size(101, 12);
             this.label19.TabIndex = 28;
             this.label19.Text = "Dry Area Percent";
             // 
             // tbWetAreaPercent
             // 
-            this.tbWetAreaPercent.Location = new System.Drawing.Point(112, 445);
+            this.tbWetAreaPercent.Location = new System.Drawing.Point(112, 411);
             this.tbWetAreaPercent.Name = "tbWetAreaPercent";
             this.tbWetAreaPercent.ReadOnly = true;
-            this.tbWetAreaPercent.Size = new System.Drawing.Size(100, 20);
+            this.tbWetAreaPercent.Size = new System.Drawing.Size(100, 21);
             this.tbWetAreaPercent.TabIndex = 27;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 448);
+            this.label21.Location = new System.Drawing.Point(6, 414);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(92, 13);
+            this.label21.Size = new System.Drawing.Size(101, 12);
             this.label21.TabIndex = 26;
             this.label21.Text = "Wet Area Percent";
             // 
             // AcquiredFramesNumTextBox
             // 
-            this.AcquiredFramesNumTextBox.Location = new System.Drawing.Point(113, 354);
+            this.AcquiredFramesNumTextBox.Location = new System.Drawing.Point(113, 327);
             this.AcquiredFramesNumTextBox.Name = "AcquiredFramesNumTextBox";
             this.AcquiredFramesNumTextBox.ReadOnly = true;
-            this.AcquiredFramesNumTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AcquiredFramesNumTextBox.Size = new System.Drawing.Size(100, 21);
             this.AcquiredFramesNumTextBox.TabIndex = 25;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 357);
+            this.label8.Location = new System.Drawing.Point(7, 330);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 13);
+            this.label8.Size = new System.Drawing.Size(95, 12);
             this.label8.TabIndex = 24;
             this.label8.Text = "Acquired Frames";
             // 
             // LostFramesNumTextBox
             // 
-            this.LostFramesNumTextBox.Location = new System.Drawing.Point(112, 384);
+            this.LostFramesNumTextBox.Location = new System.Drawing.Point(112, 354);
             this.LostFramesNumTextBox.Name = "LostFramesNumTextBox";
             this.LostFramesNumTextBox.ReadOnly = true;
-            this.LostFramesNumTextBox.Size = new System.Drawing.Size(100, 20);
+            this.LostFramesNumTextBox.Size = new System.Drawing.Size(100, 21);
             this.LostFramesNumTextBox.TabIndex = 23;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 387);
+            this.label9.Location = new System.Drawing.Point(6, 357);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 13);
+            this.label9.Size = new System.Drawing.Size(71, 12);
             this.label9.TabIndex = 22;
             this.label9.Text = "Lost Frames";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 23);
+            this.label1.Location = new System.Drawing.Point(7, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.Size = new System.Drawing.Size(101, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "Image Resolution";
             // 
@@ -582,7 +582,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             this.PreviewLabel.BackColor = System.Drawing.Color.White;
             this.PreviewLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PreviewLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.PreviewLabel.Location = new System.Drawing.Point(23, 35);
+            this.PreviewLabel.Location = new System.Drawing.Point(23, 32);
             this.PreviewLabel.Name = "PreviewLabel";
             this.PreviewLabel.Size = new System.Drawing.Size(128, 36);
             this.PreviewLabel.TabIndex = 14;
@@ -595,7 +595,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             this.WaitFirstFrameLabel.BackColor = System.Drawing.Color.White;
             this.WaitFirstFrameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WaitFirstFrameLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.WaitFirstFrameLabel.Location = new System.Drawing.Point(245, 321);
+            this.WaitFirstFrameLabel.Location = new System.Drawing.Point(180, 291);
             this.WaitFirstFrameLabel.Name = "WaitFirstFrameLabel";
             this.WaitFirstFrameLabel.Size = new System.Drawing.Size(233, 36);
             this.WaitFirstFrameLabel.TabIndex = 13;
@@ -605,9 +605,9 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // cbExcludeFinalization
             // 
             this.cbExcludeFinalization.AutoSize = true;
-            this.cbExcludeFinalization.Location = new System.Drawing.Point(869, 340);
+            this.cbExcludeFinalization.Location = new System.Drawing.Point(869, 314);
             this.cbExcludeFinalization.Name = "cbExcludeFinalization";
-            this.cbExcludeFinalization.Size = new System.Drawing.Size(119, 17);
+            this.cbExcludeFinalization.Size = new System.Drawing.Size(144, 16);
             this.cbExcludeFinalization.TabIndex = 19;
             this.cbExcludeFinalization.Text = "Exclude Finalization";
             this.cbExcludeFinalization.UseVisualStyleBackColor = true;
@@ -616,9 +616,9 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // bUpdateBackgroundImage
             // 
             this.bUpdateBackgroundImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bUpdateBackgroundImage.Location = new System.Drawing.Point(860, 137);
+            this.bUpdateBackgroundImage.Location = new System.Drawing.Point(860, 126);
             this.bUpdateBackgroundImage.Name = "bUpdateBackgroundImage";
-            this.bUpdateBackgroundImage.Size = new System.Drawing.Size(235, 45);
+            this.bUpdateBackgroundImage.Size = new System.Drawing.Size(235, 42);
             this.bUpdateBackgroundImage.TabIndex = 20;
             this.bUpdateBackgroundImage.Text = "UPDATE BACKGROUND IMAGE";
             this.bUpdateBackgroundImage.UseVisualStyleBackColor = true;
@@ -626,9 +626,9 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             // 
             // AcquisitionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1106, 637);
+            this.ClientSize = new System.Drawing.Size(1106, 588);
             this.Controls.Add(this.bUpdateBackgroundImage);
             this.Controls.Add(this.cbExcludeFinalization);
             this.Controls.Add(this.AcceptImageButton);
@@ -655,7 +655,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
         }
 
         #endregion
-
+        #region 定义了一堆的控件，没有实现
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox AutoCapturePhaseTextBox;
         private System.Windows.Forms.Label label12;
@@ -711,5 +711,6 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox tbRolledFlatRatio;
         private System.Windows.Forms.Label label22;
+        #endregion
     }
 }
