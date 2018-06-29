@@ -32,7 +32,7 @@ namespace GBMSAPI_CS_Example
         }
 
 
-        //获取设备型号等信息
+        #region 更新设备型号列表
         private void UpdateListButton_Click(object sender, EventArgs e)
         {
             this.Enabled = false;
@@ -42,10 +42,11 @@ namespace GBMSAPI_CS_Example
             {
                 this.DeviceTypeComboBox.Items.Clear();
                 ////////////////////////////////
-                ///// Get device list
+                ///// 获取设备列表存到数组中，最多存储127个设备。
                 ////////////////////////////////
                 GBMSAPI_NET_DeviceInfoStruct[] AttachedDeviceList = new GBMSAPI_NET_DeviceInfoStruct[
                     GBMSAPI_NET_DeviceInfoConstants.GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM];
+               // Console.WriteLine(GBMSAPI_NET_DeviceInfoConstants.GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM);
                 for (int i = 0; i < GBMSAPI_NET_DeviceInfoConstants.GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM; i++)
                 {
                     AttachedDeviceList[i] = new GBMSAPI_NET_DeviceInfoStruct();
@@ -56,6 +57,7 @@ namespace GBMSAPI_CS_Example
 
                 int RetVal = GBMSAPI_NET_DeviceSettingRoutines.GBMSAPI_NET_GetAttachedDeviceList(
                     AttachedDeviceList, out AttachedDeviceNumber, out USBErrorCode);
+
                 if (RetVal != GBMSAPI_NET_ErrorCodes.GBMSAPI_NET_ERROR_CODE_NO_ERROR || AttachedDeviceNumber <= 0)
                 {
                     if (RetVal != GBMSAPI_NET_ErrorCodes.GBMSAPI_NET_ERROR_CODE_NO_ERROR)
@@ -65,9 +67,9 @@ namespace GBMSAPI_CS_Example
                     }
                     return;
                 }
-
+               // Console.WriteLine(RetVal);
                 ////////////////////////////////
-                //// Store device list
+                //// Store device list 存储设备列表
                 ////////////////////////////////
                 for (int i = 0; i < AttachedDeviceNumber; i++)
                 {
@@ -78,7 +80,7 @@ namespace GBMSAPI_CS_Example
                 }
                 if (AttachedDeviceNumber > 0)
                 {
-                    this.DeviceTypeComboBox.SelectedIndex = 0;
+                    this.DeviceTypeComboBox.SelectedIndex = 0;//指定索引号为0
                 }
             }
             catch (Exception ex)
@@ -92,6 +94,7 @@ namespace GBMSAPI_CS_Example
                 this.Enabled = true;
             }
         }
+        #endregion
 
         void GBMSAPIExample_InitMainForm()
         {
@@ -102,19 +105,20 @@ namespace GBMSAPI_CS_Example
                 // SAVE IMAGE (we don't have
                 // any image to be saved)
                 //////////////////////////////
-                this.SaveFileStripButton.Enabled = true;
+                this.SaveFileStripButton.Enabled = true;//使存储图像的按钮有效
 
+                #region 显示设备的型号、标准程序号等
                 //////////////////////////////
-                // GET LIBRARY VERSION
+                // GET LIBRARY VERSION 标准程序版本
                 //////////////////////////////
                 Byte VersionField1, VersionField2, VersionField3, VersionField4;
                 GBMSAPI_NET_AuxiliaryRoutines.GBMSAPI_NET_GetMultiScanAPIVersion(
                     out VersionField1, out VersionField2, out VersionField3, out VersionField4
                     );
 
-                this.GBMSAPIVersionTextBox.Text = "" + VersionField1 + "." + VersionField2 + "." + VersionField3 + "." + VersionField4;
+                this.GBMSAPIVersionTextBox.Text = "" + VersionField1 + "." + VersionField2 + "." + VersionField3 + "." + VersionField4;//GBMS版本号4.1.0.0
 
-                Console.WriteLine(this.GBMSAPIVersionTextBox.Text);
+               // Console.WriteLine(this.GBMSAPIVersionTextBox.Text);
                 
                 string LowLevelDllName;
                 GBMSAPI_NET_AuxiliaryRoutines.GBMSAPI_NET_GetUnderlyingLibraryDllVersion(
@@ -124,11 +128,14 @@ namespace GBMSAPI_CS_Example
                 this.DeviceDllNameTextBox.Text = LowLevelDllName
                     + " Ver:" + VersionField1 + "." + VersionField2 + "." + VersionField3 + "." + VersionField4;
 
+               // Console.WriteLine(this.DeviceDllNameTextBox.Text) ;
                 //////////////////////////////
                 // GET DEVICE STATISTICS
                 //////////////////////////////
                 uint Counter, ProductionDateInSec;
                 GBMSAPI_NET_AuxiliaryRoutines.GBMSAPI_NET_GetScannerStatistics(out Counter, out ProductionDateInSec);
+
+
 
                 TimeSpan TimeFromProductionDate = TimeSpan.FromSeconds((double)ProductionDateInSec);
                 DateTime Reference = new DateTime(1970, 1, 1);
@@ -136,9 +143,10 @@ namespace GBMSAPI_CS_Example
 
                 this.DeviceProductionDateTextBox.Text = ProductionDate.ToString();
                 this.DeviceNumberOfUseTextBox.Text = "" + Counter;
-
+                //Console.WriteLine(ProductionDate.ToString());
+                //Console.WriteLine(Counter);
                 //////////////////////////////
-                // GET DEVICE FW INFO
+                // GET DEVICE FW INFO 设备的型号信息
                 //////////////////////////////
                 String FwInfoString;
                 int RetVal = GBMSAPI_NET_DeviceSettingRoutines.GBMSAPI_NET_GetDeviceNameAndVersion(
@@ -157,7 +165,9 @@ namespace GBMSAPI_CS_Example
                 {
                     this.FwInfoTextBox.Text = FwInfoString;
                 }
+                #endregion
 
+                #region 显示功能
                 //////////////////////////////
                 // GET DEVICE FEATURES
                 //////////////////////////////
@@ -1265,6 +1275,7 @@ namespace GBMSAPI_CS_Example
             }
         }
         #endregion
+        //
         private void SelectDeviceButton_Click(object sender, EventArgs e)
         {
             String CurrentChoosenDev = (String)(this.DeviceTypeComboBox.SelectedItem);
@@ -2064,6 +2075,11 @@ namespace GBMSAPI_CS_Example
         }
 
         private void FrameRateGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox10_Enter(object sender, EventArgs e)
         {
 
         }

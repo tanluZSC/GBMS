@@ -71,7 +71,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
 
 
                 ////////////////
-                // check error
+                // 判断是否有错误
                 ////////////////
                 if (GetFrameErrorCode != GBMSAPI_NET_ErrorCodes.GBMSAPI_NET_ERROR_CODE_NO_ERROR)
                 {
@@ -113,7 +113,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
                             {
                                 RetVal = GBMSAPI_NET_ScannerStartedRoutines.GBMSAPI_NET_SetClippingRegionSize(
                                     GBMSAPI_Example_Globals.ClipRegionW, GBMSAPI_Example_Globals.ClipRegionH
-                                    );
+                                    );//确定裁剪区域
                                 if (RetVal != GBMSAPI_NET_ErrorCodes.GBMSAPI_NET_ERROR_CODE_NO_ERROR)
                                 {
                                     GBMSAPI_NET_ScanningRoutines.GBMSAPI_NET_StopAcquisition();

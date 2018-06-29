@@ -454,6 +454,7 @@ namespace GBMSAPI_CS_Example
             this.groupBox10.TabIndex = 25;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Device Selection";
+            this.groupBox10.Enter += new System.EventHandler(this.groupBox10_Enter);
             // 
             // gbHeaterSystem
             // 
