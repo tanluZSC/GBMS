@@ -869,7 +869,9 @@ namespace GBMSAPI_CS_Example
             finally
             {
             }
+            #endregion
         }
+
 
         private void ObjectToScanComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -893,6 +895,7 @@ namespace GBMSAPI_CS_Example
                     uint PreviewImgMaxSizeX, PreviewImgMaxSizeY;
                     uint FullResImgMaxSizeX, FullResImgMaxSizeY;
 
+                    #region 获取图片大小
                     /*******************************
                      * Get ImageSize
                      * ****************************/
@@ -913,7 +916,7 @@ namespace GBMSAPI_CS_Example
                     this.ObjToScanImageSizeListBox.Items.Add(
                         ("FULL SIZE X = " + FullResImgMaxSizeX + "; FULL SIZE Y = " + FullResImgMaxSizeY)
                         );
-
+                    #endregion
                     ////////////////////////////////////
                     // LOAD SCAN OPTIONS
                     ////////////////////////////////////
@@ -935,17 +938,17 @@ namespace GBMSAPI_CS_Example
                     }
                     else
                     {
-                        this.FullRresolutionInPreviewCheckBox.Enabled = false;
+                        this.FullRresolutionInPreviewCheckBox.Enabled = false;//全帧率预览
                     }
                     // end ver 3.1.0.0
 
                     this.FullRresolutionInPreviewCheckBox.Enabled =
                         ((SupportedScanOptions & GBMSAPI_NET_AcquisitionOptions.GBMSAPI_NET_AO_FULL_RES_PREVIEW) != 0) ?
-                        true : false;
+                        true : false;//全帧率预览
 
                     this.HighSpeedCheckBox.Enabled =
                         ((SupportedScanOptions & GBMSAPI_NET_AcquisitionOptions.GBMSAPI_NET_AO_HIGH_SPEED_PREVIEW) != 0) ?
-                        true : false;
+                        true : false;//高速预览
 
                     // check if Roll or Flat GroupBox should be enabled
                     // VER 3.1.0.0: check all rolled objects
@@ -1093,10 +1096,10 @@ namespace GBMSAPI_CS_Example
                         this.tbCompleteIntermediateLimit.Enabled = false;
                         this.tbContrastIntermediateLimit.Enabled = false;
                     }
-
+                    #region 裁剪图片选项
                     ////////////////////////////
                     // LOAD CLIP OPTIONS
-                    ////////////////////////////
+                    /////////////////////////
                     // Clipping
                     if (ObjToScanType != GBMSAPI_NET_ScannableBiometricTypes.GBMSAPI_NET_SBT_PHOTO)
                     {
@@ -1111,7 +1114,7 @@ namespace GBMSAPI_CS_Example
                     this.ClipRegionSizeXTextBox_Leave(null, null);
                     this.ClipRegionSizeYTextBox_Leave(null, null);
                     // end ver 4.0.0.0
-
+                    #endregion
                     ////////////////////////////
                     // LOAD DrySkin Enhance
                     // option
@@ -1183,9 +1186,8 @@ namespace GBMSAPI_CS_Example
                         GBMSAPI_NET_EventInfo.GBMSAPI_NET_EI_ACQUISITION_PHASE) == 0) ?
                         GBMSAPI_Example_Globals.AcquisitionPreviewBuffer ://预览控件
                         GBMSAPI_Example_Globals.AcquisitionFullResBuffer;//全帧率预览
-
                     int SourceSX, SourceSY;
-
+                    #region 判断有没有自定义图片大小
                     if (
                      GBMSAPI_Example_Globals.ClippingRegionPosX >= 0 &&
                      GBMSAPI_Example_Globals.ClippingRegionPosY >= 0 &&
@@ -1208,6 +1210,7 @@ namespace GBMSAPI_CS_Example
 
                         Marshal.Copy(Clipped, 0, SourcePtr, Clipped.Length);
                     }
+                    #endregion
                     else
                     {
                         SourceSX = GBMSAPI_Example_Globals.LastFrameSizeX;
@@ -1229,7 +1232,7 @@ namespace GBMSAPI_CS_Example
 
                     // Rescale Acquired image picture box, holding its width,
                     // and varying the height (until a 300 pixel threshold, then fix width)
-                    //调整获取到的图片的长宽，并使其分辨率在上相300像素每英寸以下
+                   //正常情况下的宽
                     this.AcquiredImagePictureBox.Width = GBMSAPI_Example_Globals.DesiredPictureBoxSize;
                     this.AcquiredImagePictureBox.Height = (int)(
                         ((double)(this.AcquiredImagePictureBox.Width)) *
@@ -1246,7 +1249,7 @@ namespace GBMSAPI_CS_Example
 
                     this.AcquiredImagePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     this.AcquiredImagePictureBox.Image = LastAcqImage;
-
+                 //   PictureBox1.Image = LastAcqImage;
                     this.ImSXTextBox.Text = "" + LastAcqImage.Width;
                     this.ImSYTextBox.Text = "" + LastAcqImage.Height;
                     this.ContrastTextBox.Text = "" + GBMSAPI_Example_Globals.ImageContrast;
@@ -1314,7 +1317,9 @@ namespace GBMSAPI_CS_Example
                 }
             }
         }
-        #region 保存图像到本地，目前图像会覆盖，只会保存一个图像
+        
+
+        #region 保存图片事件按钮
         private void SaveFileStripButton_Click(object sender, EventArgs e)
         {
             // copy image data
@@ -1422,6 +1427,7 @@ namespace GBMSAPI_CS_Example
             }
         }
         #endregion
+      
 
         #region 根据选择框是否被勾选有效/无效化图像裁剪
         private void ClipEnableCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -1570,6 +1576,7 @@ namespace GBMSAPI_CS_Example
             this.RefreshControls();
         }
 
+        #region 图像旋转
         private void RotationRadioButton_0_CheckedChanged(object sender, EventArgs e)
         {
             if (this.RotationRadioButton_0.Checked == true)
@@ -1625,7 +1632,7 @@ namespace GBMSAPI_CS_Example
                 }
             }
         }
-
+        #endregion
         private void SelectImageTimeoutTextBox_Leave(object sender, EventArgs e)
         {
             try
@@ -2083,6 +2090,8 @@ namespace GBMSAPI_CS_Example
         {
 
         }
+
+
         // end ver 4.2.0.1
     }
 }

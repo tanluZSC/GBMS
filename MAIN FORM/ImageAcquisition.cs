@@ -187,10 +187,7 @@ namespace GBMSAPI_CS_Example
                 /////////////////////////////
                 // ROLL AREA STANDARD
                 /////////////////////////////
-                if (
-                    this.RollStandardCheckBox.Enabled &&
-                    this.RollStandardCheckBox.Checked
-                )
+                if ( this.RollStandardCheckBox.Enabled &&this.RollStandardCheckBox.Checked)
                 {
                     RollAreaStandardGa = true;
                 }
@@ -274,8 +271,7 @@ namespace GBMSAPI_CS_Example
                     }
 
                     // customized completeness
-                    if (this.ShowCustomizedCompletenessCheckBox.Enabled == true &&
-                        this.ShowCustomizedCompletenessCheckBox.Checked == true)
+                    if (this.ShowCustomizedCompletenessCheckBox.Enabled == true && this.ShowCustomizedCompletenessCheckBox.Checked == true)
                     {
                         // read limit value
                         try
@@ -311,7 +307,7 @@ namespace GBMSAPI_CS_Example
                         (DisplayOptionMask) |= GBMSAPI_NET_DisplayOptions.GBMSAPI_NET_DO_CUSTOMIZED_COMPLETENESS;
                     }
                 }
-
+                #region 获取裁剪数据
                 ///////////////////////////////////////
                 // GET CLIP DATA
                 ///////////////////////////////////////
@@ -355,7 +351,7 @@ namespace GBMSAPI_CS_Example
                         }
                     }
                 }
-
+                #endregion
                 ///////////////////////////////////////////
                 // GET ROLL OPTIONS
                 ///////////////////////////////////////////

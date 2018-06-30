@@ -1772,7 +1772,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             GBMSAPI_Example_Globals.UseImageFinalization = !(this.cbExcludeFinalization.Checked);
         }
 
-        // ver 3.1.0.0
+      
         private void bUpdateBackgroundImage_Click(object sender, EventArgs e)
         {
             UInt32 Diag;
@@ -1796,9 +1796,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
                     RetVal, "bUpdateBackgroundImage_Click, GBMSAPI_NET_UpdateBackgroundImage");
             }
         }
-        // end ver 3.1.0.0
-
-        // ver 3.1.0.0
+      
         public static void ShowRotationNotCompletedMessage()
         {
             if (!((GBMSAPI_Example_Globals.OptionMask & GBMSAPI_NET_AcquisitionOptions.GBMSAPI_NET_AO_EXTERNAL_ROLL_COMPOSITION) != 0)
@@ -1808,6 +1806,6 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
                 MessageBox.Show("Rotation not completed", "WARNING");
             }
         }
-        // end ver 3.1.0.0
+       
     }
 }
