@@ -34,18 +34,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
         public static int GBMSAPI_ExampleFrCount = 0;
         
 
-        public int AcquisitionCallback(
-            uint OccurredEventCode,
-            int GetFrameErrorCode,
-            uint EventInfo,
-            byte[] FramePtr,
-            int FrameSizeX,
-            int FrameSizeY,
-            double CurrentFrameRate,
-            double NominalFrameRate,
-            uint GB_Diagnostic,
-            System.IntPtr UserDefinedParameters
-            )
+        public int AcquisitionCallback(uint OccurredEventCode,int GetFrameErrorCode,uint EventInfo,byte[] FramePtr,int FrameSizeX,int FrameSizeY,double CurrentFrameRate,double NominalFrameRate,uint GB_Diagnostic,System.IntPtr UserDefinedParameters)
         {
             try
             {
@@ -55,7 +44,6 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
                     GBMSAPI_Example_Globals.SkipRequested = false;
                     return 0;
                 }
-
                 //////////////////////////////////
                 // Get Optional external equipment
                 //////////////////////////////////
@@ -68,8 +56,6 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
                     GBMSAPI_Example_Globals.LastErrorCode = RetVal;
                     return 0;
                 }
-
-
                 ////////////////
                 // ≈–∂œ «∑Ò”–¥ÌŒÛ
                 ////////////////

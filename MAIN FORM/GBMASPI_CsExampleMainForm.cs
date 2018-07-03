@@ -1,19 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using GBMSAPI_NET;
-using GBMSAPI_NET.GBMSAPI_NET_Defines;
 using GBMSAPI_NET.GBMSAPI_NET_Defines.GBMSAPI_NET_AcquisitionProcessDefines;
 using GBMSAPI_NET.GBMSAPI_NET_Defines.GBMSAPI_NET_DeviceCharacteristicsDefines;
 using GBMSAPI_NET.GBMSAPI_NET_Defines.GBMSAPI_NET_ErrorCodesDefines;
-using GBMSAPI_NET.GBMSAPI_NET_Defines.GBMSAPI_NET_RollFunctionalityDefines;
 using GBMSAPI_NET.GBMSAPI_NET_Defines.GBMSAPI_NET_VisualInterfaceLCDDefines;
-using GBMSAPI_NET.GBMSAPI_NET_Defines.GBMSAPI_NET_VisualInterfaceLEDsDefines;
 using GBMSAPI_NET.GBMSAPI_NET_LibraryFunctions;
 
 using GBMSAPI_CS_Example.UTILITY;
@@ -42,7 +36,7 @@ namespace GBMSAPI_CS_Example
             {
                 this.DeviceTypeComboBox.Items.Clear();
                 ////////////////////////////////
-                ///// 获取设备列表存到数组中，最多存储127个设备。
+                ///// 获取设备列表存到数组中，最多存储127个设备。GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM=127常量
                 ////////////////////////////////
                 GBMSAPI_NET_DeviceInfoStruct[] AttachedDeviceList = new GBMSAPI_NET_DeviceInfoStruct[
                     GBMSAPI_NET_DeviceInfoConstants.GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM];
@@ -107,7 +101,7 @@ namespace GBMSAPI_CS_Example
                 //////////////////////////////
                 this.SaveFileStripButton.Enabled = true;//使存储图像的按钮有效
 
-                #region 显示设备的型号、标准程序号等
+                #region 显示设备的型号、标准程序号等 主要是调用GBMSAPI_NET.dll
                 //////////////////////////////
                 // GET LIBRARY VERSION 标准程序版本
                 //////////////////////////////
@@ -2087,6 +2081,11 @@ namespace GBMSAPI_CS_Example
         }
 
         private void groupBox10_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowCustomizedContrastCheckBox_CheckedChanged(object sender, EventArgs e)
         {
 
         }

@@ -1025,6 +1025,7 @@ namespace GBMSAPI_CS_Example
             this.ShowCustomizedContrastCheckBox.TabIndex = 0;
             this.ShowCustomizedContrastCheckBox.Text = "Custom Contrast";
             this.ShowCustomizedContrastCheckBox.UseVisualStyleBackColor = true;
+            this.ShowCustomizedContrastCheckBox.CheckedChanged += new System.EventHandler(this.ShowCustomizedContrastCheckBox_CheckedChanged);
             // 
             // label8
             // 
