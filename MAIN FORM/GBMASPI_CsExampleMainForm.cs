@@ -29,7 +29,7 @@ namespace GBMSAPI_CS_Example
         #region 更新设备型号列表
         private void UpdateListButton_Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
+            this.Enabled = true;
             Cursor.Current = Cursors.WaitCursor;
             Application.DoEvents();
             try
@@ -41,7 +41,7 @@ namespace GBMSAPI_CS_Example
                 GBMSAPI_NET_DeviceInfoStruct[] AttachedDeviceList = new GBMSAPI_NET_DeviceInfoStruct[
                     GBMSAPI_NET_DeviceInfoConstants.GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM];
                // Console.WriteLine(GBMSAPI_NET_DeviceInfoConstants.GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM);
-                for (int i = 0; i < GBMSAPI_NET_DeviceInfoConstants.GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM; i++)
+                for ( int i = 0; i < GBMSAPI_NET_DeviceInfoConstants.GBMSAPI_NET_MAX_PLUGGED_DEVICE_NUM; i++)
                 {
                     AttachedDeviceList[i] = new GBMSAPI_NET_DeviceInfoStruct();
                 }
@@ -1180,6 +1180,7 @@ namespace GBMSAPI_CS_Example
                         GBMSAPI_NET_EventInfo.GBMSAPI_NET_EI_ACQUISITION_PHASE) == 0) ?
                         GBMSAPI_Example_Globals.AcquisitionPreviewBuffer ://预览控件
                         GBMSAPI_Example_Globals.AcquisitionFullResBuffer;//全帧率预览
+                    
                     int SourceSX, SourceSY;
                     #region 判断有没有自定义图片大小
                     if (
@@ -1223,7 +1224,7 @@ namespace GBMSAPI_CS_Example
                         pal.Entries[i] = Color.FromArgb(255, i, i, i);
                     }
                     LastAcqImage.Palette = pal;
-
+                   // pictureBox1.Image = LastAcqImage; 到这步已经获取到图片数据了。
                     // Rescale Acquired image picture box, holding its width,
                     // and varying the height (until a 300 pixel threshold, then fix width)
                    //正常情况下的宽
@@ -2086,6 +2087,11 @@ namespace GBMSAPI_CS_Example
         }
 
         private void ShowCustomizedContrastCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
         {
 
         }

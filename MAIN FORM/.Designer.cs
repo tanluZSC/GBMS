@@ -2555,6 +2555,7 @@ namespace GBMSAPI_CS_Example
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Acquired Image Info";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // GBMASPI_CsExampleMainForm
             // 

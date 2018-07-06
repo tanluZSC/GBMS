@@ -21,7 +21,7 @@ using GBMSAPI_CS_Example.MAIN_FORM;
 
 namespace GBMSAPI_CS_Example.ACQUISITION_FORM
 {
-    internal class MS500_NET_DLL_WRAPPER
+    internal class MS500_NET_DLL_WRAPPER//
     {
         [DllImport("MS500u.dll", EntryPoint = "MS500_SetDiagnosticSensitivity")]
         public static extern int MS500_SetDiagnosticSensitivity(

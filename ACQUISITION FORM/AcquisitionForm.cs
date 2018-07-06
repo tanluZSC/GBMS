@@ -50,8 +50,8 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             //
             //TODO: Add the constructor code here
             //
-            GBMSAPI_Example_Globals.UseImageFinalization = true;
-            this.cbExcludeFinalization.Checked = false;
+             GBMSAPI_Example_Globals.UseImageFinalization = true;
+               this.cbExcludeFinalization.Checked = false;
 
             //////////////////////////////////
             // INIT GLOBALS
@@ -323,6 +323,7 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
             this.Close();
         }
 
+        //采集状态管理
         private void AcquisitionStateManagement()
         {
             try
@@ -1806,6 +1807,10 @@ namespace GBMSAPI_CS_Example.ACQUISITION_FORM
                 MessageBox.Show("Rotation not completed", "WARNING");
             }
         }
-       
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

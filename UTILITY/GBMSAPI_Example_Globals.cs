@@ -294,8 +294,9 @@ namespace GBMSAPI_CS_Example.UTILITY
                         GBMSAPI_Example_Util.GBMSAPI_Example_ManageErrors(
                             RetVal, "WAIT_PREVIEW_END_STATUS");
                     }
+                    #region 质量评估说明
                     /////////////////////
-                    // QUALITY
+                    // 质量评估算法
                     /////////////////////
                     // Quality parameter should be got by using the GBNFIQ or the
                     // GBFINIMG libraries (FULL-ENHANCED package), not included in
@@ -423,6 +424,7 @@ namespace GBMSAPI_CS_Example.UTILITY
                         RetVal, "WAIT_PREVIEW_END_STATUS");
                 }
             }
+            #endregion
         }
     }
 }

@@ -11,7 +11,7 @@ namespace GBMSAPI_CS_Example
         /// </summary>
         [STAThread]
         static void Main()
-        {
+       {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GBMASPI_CsExampleMainForm());
